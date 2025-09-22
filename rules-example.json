@@ -1,0 +1,88 @@
+{
+  "version": "1.2.0",
+  "updated_at": "2025-09-22",
+  "mercantil": {
+    "name": "Mercantil",
+    "scenarios": [
+      {
+        "id": "jem_pagare",
+        "title": "Juicio Ejecutivo Mercantil por pagaré",
+        "refs": [
+          {
+            "label": "CCom arts. 1391–1414",
+            "cite": "Código de Comercio"
+          },
+          {
+            "label": "LGTyOC arts. 170–177",
+            "cite": "Ley General de Títulos y Operaciones de Crédito"
+          }
+        ],
+        "checklist": [
+          {
+            "id": "doc",
+            "q": "¿Documento con aparejada ejecución (pagaré)?"
+          },
+          {
+            "id": "firma",
+            "q": "¿Firma autógrafa o FE avanzada válida?"
+          },
+          {
+            "id": "monto",
+            "q": "¿Monto líquido, exigible y determinado?"
+          },
+          {
+            "id": "venc",
+            "q": "¿Vencimiento acreditado? (a la vista / fecha fija / sucesivos)"
+          },
+          {
+            "id": "domicilio",
+            "q": "¿Domicilio del demandado acreditado para emplazar?"
+          },
+          {
+            "id": "intereses",
+            "q": "¿Intereses no usurarios o se pide moderación?"
+          },
+          {
+            "id": "competencia",
+            "q": "¿Competencia por territorio / sumisión / domicilio del deudor?"
+          },
+          {
+            "id": "personalidad",
+            "q": "¿Personería del actor acreditada?"
+          }
+        ],
+        "outputs": {
+          "demanda": "C. JUEZ DE LO CIVIL/MERCANTIL EN [SEDE]\\n\\nQuien suscribe [ACTOR]..."
+        }
+      }
+    ]
+  },
+  "civil": {
+    "name": "Civil (EDOMEX)",
+    "scenarios": [
+      {
+        "id": "arrendamiento",
+        "title": "Acciones de arrendamiento (desocupación/pago)",
+        "refs": [
+          {
+            "label": "CC y CPC EDOMEX (arrendamiento y desocupación)",
+            "cite": "Códigos del Estado de México"
+          }
+        ],
+        "checklist": [
+          {
+            "id": "contrato",
+            "q": "¿Contrato escrito vigente/vencido y destino del inmueble?"
+          },
+          {
+            "id": "moras",
+            "q": "¿Adeudo de rentas/servicios y periodo exacto?"
+          }
+        ],
+        "outputs": {
+          "demanda": "Se demanda desocupación y pago de rentas por [CANTIDAD] respecto del inmueble [DOMICILIO]."
+        }
+      }
+    ]
+  }
+}
